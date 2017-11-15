@@ -1,5 +1,6 @@
 <% @artist.songs.each do |s| %>
-  <h2> <%= s.title %> </h2> <br>
-  <a href="/songs/<%= s.id %>"><%= s.title %></a><br>
+  <ul>
+    <li> <%= s.title %> </li> <br>
+    <a href="/songs/<%= s.id %>"><%= s.title %></a><br>
+  </ul>
 <% end %>
-  
